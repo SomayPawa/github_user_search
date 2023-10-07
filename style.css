@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Mono", monospace;
+  /* border: 1px solid red; */
+}
+:root {
+  --btn-primary-bg: #0079ff;
+  --btn-primary-hover-bg: #60abff;
+  --no-result-color: #f74646;
+
+  /*==== Light theme colors ====*/
+  --body-bg-color: #f6f8ff;
+  --inner-bg-color: #fefefe;
+  --logo-color: #222731;
+  --secondry-text-color: #697c9a;
+  --secondry-heading-color: #2b3442;
+  /* Dark theme colors */
+  --body-bg-color-dark: #141d2f;
+  --inner-bg-color-dark: #1e2a47;
+  --logo-color-dark: #fff;
+  --secondry-text-color-dark: #fff;
+  --secondry-heading-color-dark: #fff;
+}
+.bold {
+  color: var(--secondry-heading-color-dark);
+  font-weight: bold;
+}
+.logo{
+  color: var(--logo-color-dark);
+}
+body {
+  background-color: var(--body-bg-color-dark);
+}
+main {
+  margin-left: auto;
+  margin-right: auto;
+}
+.logo {
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+}
+.mode {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mode:hover{
+  cursor: pointer;
+}
+.mode span {
+  margin-right: 10px;
+  font-weight: bold;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  margin-top: 10%;
+}
+a {
+  text-decoration: none;
+  color: var(--secondry-text-color-dark);
+}
+.search {
+  background-color: var(--inner-bg-color-dark);
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  margin-top: 10px;
+  align-items: center;
+box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.query {
+  display: flex;
+  width: 100%;
+  margin-right: 10px;
+}
+
+.query img {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+.search input {
+  font-size: 0.6rem;
+  color: var(--secondry-text-color-dark);
+  width: 100%;
+  background-color: var(--inner-bg-color-dark);
+  border: none;
+}
+.search input:focus {
+  border: none;
+  outline: none;
+}
+button {
+  font-size: 12px;
+  background-color: var(--btn-primary-bg);
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.profile {
+  margin-top: 10px;
+  background-color: var(--inner-bg-color-dark);
+  padding: 20px 10px;
+  border-radius: 10px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+#username{
+  color: var(--btn-primary-bg);
+}
+.about {
+  display: flex;
+  flex-direction: column;
+}
+.up {
+  display: flex;
+  font-size: 12px;
+}
+#pfp {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+@media screen and (max-width: 376px) {
+  main {
+    width: 90%;
+    color: var(--secondry-text-color-dark);
+    font-size: 0.6rem;
+  }
+  h2 {
+    font-size: 0.6rem;
+    color: var(--secondry-text-color-dark);
+    font-weight: normal;
+  }
+  .up {
+    display: flex;
+    justify-content: space-around;
+  }
+  .about {
+    display: flex;
+    flex-direction: column;
+  }
+  #bio {
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  .gitstats {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 10px;
+    width: calc(100%-40px);
+    border-radius: 5px;
+    background-color: var(--body-bg-color-dark);
+    color: var(--secondry-text-color-dark);
+  }
+  .gitlinks {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 20px;
+    /* margin-right: 20px; */
+  }
+  .gitlinks img {
+    margin-right: 10px;
+  }
+}
+@media screen and (min-width: 376px) {
+  .query {
+    width: 100%;
+    margin-right: 10px;
+  }
+  #pfp {
+    width: 15%;
+    height: auto;
+  }
+  main {
+    width: 90%;
+    max-width: 500px;
+    color: var(--secondry-text-color-dark);
+    font-size: 0.6rem;
+  }
+  h2 {
+    font-size: 0.6rem;
+    color: var(--secondry-text-color-dark);
+    font-weight: normal;
+  }
+  .up {
+    display: flex;
+    justify-content: space-around;
+  }
+  .about {
+    display: flex;
+  }
+  #bio {
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  .gitstats {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 10px;
+    width: calc(100%-40px);
+    border-radius: 5px;
+    background-color: var(--body-bg-color-dark);
+    color: var(--secondry-text-color-dark);
+  }
+  .gitlinks {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 20px;
+    /* margin-right: 20px; */
+  }
+  .gitlinks img {
+    margin-right: 10px;
+  }
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <title>Frontend Mentor | GitHub user search app</title>
+  </head>
+  <body>
+    <main>
+      <nav>
+        <a href="#" class="logo">GitHubFinder</a>
+        <div class="mode">
+          <span class="light" onclick="changetheme()">LIGHT</span>
+          <img class="modechange" src="./images/icon-sun.svg" onclick="changetheme()" alt="" />
+        </div>
+      </nav>
+      <div class="search">
+        <div class="query">
+          <img  src="./images/icon-search.svg" alt="" />
+          <input
+            class="searchinput"
+            type="text"
+            placeholder="Seach Github username..."
+          />
+        </div>
+        <button class="submit" onclick="fetchuser()">Search</button>
+      </div>
+      <div class="profile">
+        <div class="up">
+          <img id="pfp" src="" alt="" />
+          <div class="about">
+            <h2 id="name"></h2>
+            <div id="username"></div>
+          </div>
+          <div>
+            <h2>Joined</h2>
+            <p class="joined"></p>
+          </div>
+        </div>
+        <p id="bio"></p>
+        <div class="gitstats">
+          <div>
+            <h2>Repos</h2>
+            <p class="repos bold"></p>
+          </div>
+          <div>
+            <h2>Followers</h2>
+            <p class="followers bold"></p>
+          </div>
+          <div>
+            <h2>Following</h2>
+            <p class="following bold"></p>
+          </div>
+        </div>
+        <div class="links">
+          <div class="gitlinks">
+            <img src="./images/icon-location.svg" alt="" />
+            <p class="location"></p>
+          </div>
+          <div class="gitlinks">
+            <img src="./images/icon-website.svg" alt="" />
+            <p class="url"></p>
+          </div>
+          <div class="gitlinks">
+            <img src="./images/icon-twitter.svg" alt="" />
+            <p class="twitter"></p>
+          </div>
+          <div class="gitlinks">
+            <img src="./images/icon-company.svg" alt="" />
+            <p class="org"></p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
